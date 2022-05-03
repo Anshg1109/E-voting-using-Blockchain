@@ -4,6 +4,9 @@ import Loading from "../assets/loading.png";
 import './polling.css';
 
 const PollingStation = (props) => {
+  // candidate1URL is a state variable  and changeCandidate1Url is a function     
+  //// this is called react hooks  . this functions purpose is to change the value that reside
+  // in candidate1 state variable  and this usestate function isgoing to set default value for this 
   const [candidate1URL, changeCandidate1Url] = useState(Loading);
   const [candidate2URL, changeCandidate2Url] = useState(Loading);
   const [showresults, changeResultsDisplay] = useState(false);
@@ -75,13 +78,13 @@ const PollingStation = (props) => {
       <Row>
         <Col className='jutify-content-center d-flex'>
           <Container>
-            <Row style={{ marginTop: "5vh", backgroundColor: "#494a54" }}>
+            <Row style={{ marginTop: "5vh", backgroundColor: "rgb(218 218 218)" }}>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  padding: "3vw",
-                  boxShadow: "10px 10px 20px -1px rgba(0,0,0,0.78)",
+                  padding: "2vw",
+                  boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",
                 }}
               >
                 <img
@@ -98,7 +101,7 @@ const PollingStation = (props) => {
                   display: "flex",
                   justifyContent: "center",
                   padding: "1vw",
-                  boxShadow: "10px 10px 20px -1px rgba(0,0,0,0.78)",}}>
+                  boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",}}>
                 <h1>hello</h1>
             </Row>
             {showresults ? (
@@ -112,7 +115,7 @@ const PollingStation = (props) => {
                     justifyContent: "center",
                     fontSize: "3vw",
                     padding: "10px",
-                    backgroundColor: "#494a54",
+                    backgroundColor: "rgb(218 218 218)",
                     color: "white",
                     borderRadius: "10px",
                     textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
@@ -127,7 +130,7 @@ const PollingStation = (props) => {
               style={{ marginTop: "5vh" }}
               className='justify-content-center d-flex'
             >
-              <Button className="Button" disabled={buttonStatus} onClick={() => addVote(0)}>
+              <Button className="button-33" disabled={buttonStatus} onClick={() => addVote(0)}>
                 Vote
               </Button>
             </Row>
@@ -136,17 +139,17 @@ const PollingStation = (props) => {
         <Col className='justify-content-center d-flex align-items-center'>
           <div
             style={{
-              color: "white",
+              color: "Black",
               display: "flex",
               justifyContent: "center",
-              backgroundColor: "#494a54",
+              backgroundColor: "rgb(218 218 218)",
               height: "20vh",
               alignItems: "center",
               padding: "2vw",
               textAlign: "center",
               borderRadius: "10px",
-              textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
-              boxShadow: "0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)",
+              // textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
+              boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",
             }}
           >
             {prompt}
@@ -154,13 +157,13 @@ const PollingStation = (props) => {
         </Col>
         <Col className='jutify-content-center d-flex'>
           <Container>
-            <Row style={{ marginTop: "5vh", backgroundColor: "#494a54" }}>
+            <Row style={{ marginTop: "5vh", backgroundColor: "rgb(218 218 218)" }}>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  padding: "3vw",
-                  boxShadow: "10px 10px 20px -1px rgba(0,0,0,0.78)",
+                  padding: "2vw",
+                  boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",
                 }}
               >
                 <img
@@ -177,7 +180,7 @@ const PollingStation = (props) => {
                   display: "flex",
                   justifyContent: "center",
                   padding: "1vw",
-                  boxShadow: "10px 10px 20px -1px rgba(0,0,0,0.78)",}}>
+                  boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",}}>
                 <h1>hello</h1>
             </Row>
             {showresults ? (
@@ -191,7 +194,7 @@ const PollingStation = (props) => {
                     justifyContent: "center",
                     fontSize: "3vw",
                     padding: "10px",
-                    backgroundColor: "#494a54",
+                    backgroundColor: "rgb(218 218 218)",
                     color: "white",
                     borderRadius: "10px",
                     textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
@@ -206,7 +209,7 @@ const PollingStation = (props) => {
               style={{ marginTop: "5vh" }}
               className='justify-content-center d-flex'
             >
-              <Button className="Button" disabled={buttonStatus} onClick={() => addVote(1)}>
+              <Button className="button-33" disabled={buttonStatus} onClick={() => addVote(1)}>
                 Vote
               </Button>
             </Row>

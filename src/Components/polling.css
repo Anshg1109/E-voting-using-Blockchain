@@ -3,3 +3,80 @@
     background-color: black;
     color: white;
 }
+
+
+/* CSS */
+.button-33 {
+  /* background-color: rgb(167, 19, 19); */
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: Black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 134, 187, 0.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+/* Home css */
+a {
+    text-decoration: none;
+    color: inherit; }
+  
+
+  .ct {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all .2s ease; }
+    .ct:before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 3px;
+      display: block;
+      border-radius: 28px;
+      background: rgb(153 157 215);
+      width: 56px;
+      height: 44px;
+      transition: all .3s ease; }
+    .ct span {
+      position: relative;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      vertical-align: middle; }
+    .ct svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #111;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all .3s ease; }
+    .ct:hover:before {
+      width: 100%;
+      background: rgb(153 157 215); }
+    .ct:hover svg {
+      transform: translateX(0); }
+    .ct:active {
+      transform: scale(0.96); }
+  

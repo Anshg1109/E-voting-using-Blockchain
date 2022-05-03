@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // import React, { useEffect, useState } from "react";
 import { Table, Container, Button } from "react-bootstrap";
 import { login, logout } from "../utils"
+import './polling.css'
 const Home = props => {
 
     const [promptList, changePromptList] = useState([]);
@@ -16,8 +17,8 @@ const Home = props => {
     }, []);
 
     return (
-        <Container>
-            <Table style={{margin:"5vh"}} striped bordered hover>
+        <Container >
+            <Table style={{marginTop:"10vh", marginBottom:"20vh"}} striped bordered hover>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -33,7 +34,14 @@ const Home = props => {
                                 <td>{index + 1}</td>
                                 <td>{el}</td>
                                 <td>
-                                  <Button onClick={window.accountId === "" ? login : ()=>props.changeCandidates(el)}>Go to Poll</Button>
+                                <a onClick={window.accountId === "" ? login : ()=>props.changeCandidates(el)} className="ct">
+                                <span>Go to Poll</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                                </a>
+                                  {/* <Button onClick={window.accountId === "" ? login : ()=>props.changeCandidates(el)}>Go to Poll</Button> */}
                                 </td>
                               </tr>
                             );

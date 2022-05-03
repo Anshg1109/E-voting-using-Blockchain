@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
+import './polling.css'
 
 const NewPoll = (props) => {
   const candidateName1 = useRef();
@@ -11,6 +12,10 @@ const NewPoll = (props) => {
   const promptRef = useRef();
 
   const [disableButton, changeDisable] = useState(false);
+
+    //this function will collect all the information and sends off to the blockchain
+    //(all smart contract functions are are asynchronous) 
+    //we have to wait for the respone to return to each time we make a contact call 
 
   const sendToBlockChain = async () => {
     changeDisable(true);
@@ -36,7 +41,7 @@ const NewPoll = (props) => {
   };
 
   return (
-    <Container style={{ marginTop: "10px" }}>
+    <Container style={{ marginTop: "40px", marginBottom: "6%" }}>
       <Form>
         <Form.Group className='mb-3'>
           <Form.Label>Candidiate 1 Name</Form.Label>
@@ -76,13 +81,20 @@ const NewPoll = (props) => {
         </Form.Group>
       </Form>
 
-      <Button
+      {/* <Button
         disabled={disableButton}
         onClick={sendToBlockChain}
         variant='primary'
       >
         Submit
-      </Button>
+      </Button> */}
+      <a onClick={sendToBlockChain} className="ct" style={{padding: "19px 18px",top:"10px"}}>
+      <span>Submit</span>
+      <svg width="13px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+      </a>
     </Container>
   );
 };

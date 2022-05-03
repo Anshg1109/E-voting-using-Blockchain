@@ -18,7 +18,8 @@ a {
 .footer-20192 {
   position: relative;
   color: #fff;
-  padding: 7rem 0;
+  /* padding: 7rem 0; */
+  margin-top: 66px;
   background-color: #141d2a; }
   .footer-20192 .container {
     position: relative; }
@@ -44,7 +45,7 @@ a {
       height: 40px;
       border-radius: 50%;
       display: inline-block;
-      margin: 0;
+      margin: 1px;
       padding: 0;
       background-color: #8186d5;
       color: #fff; }
@@ -67,7 +68,7 @@ a {
     box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
     padding: 20px;
     background-color: #8186d5;
-    top: -150px;
+    top: -26px;
     position: relative; }
     .footer-20192 .cta h2, .footer-20192 .cta h3 {
       line-height: 1.5; }

@@ -20,7 +20,7 @@ import NewPoll from "./Components/NewPoll";
 import PollingStation from "./Components/PollingStation";
 
 //images
-// import Chainvote from "./assets/Chainvotelogo.png";
+import ChainVoteLogo from "./assets/_Logo3.png";
 
 import getConfig from './config'
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
@@ -46,10 +46,10 @@ export default function App() {
 
     <BrowserRouter>
     
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: "#494a54"}} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: "rgb(34 49 70)",}} variant="dark">
       <Container>
-        <Navbar.Brand href="/">
-          {/* <img src={ChainVoteLogo}></img> */}
+        <Navbar.Brand href="/"style={{padding: '0px'}}>
+          <img style={{height:'55px'}} src={ChainVoteLogo}></img>
           ChainVote
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -76,57 +76,57 @@ export default function App() {
 
 
 
-    <footer class="footer-20192">
-      <div class="site-section">
-        <div class="container">
+    <footer className="footer-20192">
+      <div className="site-section">
+        <div className="container">
 
-          <div class="cta d-block d-md-flex align-items-center px-5">
+          <div className="cta d-block d-md-flex align-items-center px-5">
             <div>
-              <h2 class="mb-0">Ready for a next project?</h2>
-              <h3 class="text-dark">Let's get started!</h3>
+              <h2 className="mb-0">Vote For Your Favourite Candidate!!</h2>
+              <h3 className="text-dark">Let's get started!</h3>
             </div>
-            <div class="ml-auto">
-              <a href="#" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+            <div className="ml-auto">
+              <a href="/NewPoll" className="btn btn-dark rounded-0 py-3 px-5">New Poll</a>
             </div>
           </div>
-          <div class="row">
+          <div className="row">
 
-            <div class="col-sm">
-              <a href="#" class="footer-logo">Colorlib</a>
-              <p class="copyright">
-                <small>&copy; 2019</small>
+            <div className="col-sm">
+              <a href="#" className="footer-logo">ChainVote</a>
+              <p className="copyright">
+                <small>&copy; 2022</small>
               </p>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <h3>Customers</h3>
-              <ul class="list-unstyled links">
+              <ul className="list-unstyled links">
                 <li><a href="#">Buyer</a></li>
                 <li><a href="#">Supplier</a></li>
               </ul>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <h3>Company</h3>
-              <ul class="list-unstyled links">
+              <ul className="list-unstyled links">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <h3>Further Information</h3>
-              <ul class="list-unstyled links">
+              <ul className="list-unstyled links">
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <h3>Follow us</h3>
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-medium"></span></a></li>
-                <li><a href="#"><span class="icon-paper-plane"></span></a></li>
+              <ul className="list-unstyled social">
+                <li><a href="#"><span className="icon-facebook"></span></a></li>
+                <li><a href="#"><span className="icon-twitter"></span></a></li>
+                <li><a href="#"><span className="icon-linkedin"></span></a></li>
+                <li><a href="#"><span className="icon-medium"></span></a></li>
+                <li><a href="#"><span className="icon-paper-plane"></span></a></li>
               </ul>
             </div>
             
