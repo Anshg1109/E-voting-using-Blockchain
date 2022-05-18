@@ -97,13 +97,13 @@ const PollingStation = (props) => {
                 ></img>
               </div>
             </Row>
-            <Row style={{
+            {/* <Row style={{
                   display: "flex",
                   justifyContent: "center",
                   padding: "1vw",
                   boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",}}>
                 <h1>hello</h1>
-            </Row>
+            </Row> */}
             {showresults ? (
               <Row
                 className='justify-content-center d-flex'
@@ -118,7 +118,7 @@ const PollingStation = (props) => {
                     backgroundColor: "rgb(218 218 218)",
                     color: "white",
                     borderRadius: "10px",
-                    textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
+                    textShadow: "black 1px 1px 3px, black 0px 0px 1px, rgb(0 0 0) 0px 0px 3px",
                     boxShadow: "0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)",
                   }}
                 >
@@ -176,13 +176,13 @@ const PollingStation = (props) => {
                 ></img>
               </div>
             </Row>
-            <Row style={{
+            {/* <Row style={{
                   display: "flex",
                   justifyContent: "center",
                   padding: "1vw",
                   boxShadow: "rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset",}}>
                 <h1>hello</h1>
-            </Row>
+            </Row> */}
             {showresults ? (
               <Row
                 className='justify-content-center d-flex'
@@ -197,7 +197,7 @@ const PollingStation = (props) => {
                     backgroundColor: "rgb(218 218 218)",
                     color: "white",
                     borderRadius: "10px",
-                    textShadow: "1px 1px 2px black, 0 0 25px black, 0 0 5px #000000",
+                    textShadow: "black 1px 1px 3px, black 0px 0px 1px, rgb(0 0 0) 0px 0px 3px",
                     boxShadow: "0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)",
                   }}
                 >

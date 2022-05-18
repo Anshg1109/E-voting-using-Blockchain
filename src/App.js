@@ -46,7 +46,7 @@ export default function App() {
 
     <BrowserRouter>
     
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: "rgb(34 49 70)",}} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: "rgb(32 44 61)",}} variant="dark">
       <Container>
         <Navbar.Brand href="/"style={{padding: '0px'}}>
           <img style={{height:'55px'}} src={ChainVoteLogo}></img>

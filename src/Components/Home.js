@@ -34,7 +34,7 @@ const Home = props => {
                                 <td>{index + 1}</td>
                                 <td>{el}</td>
                                 <td>
-                                <a onClick={window.accountId === "" ? login : ()=>props.changeCandidates(el)} className="ct">
+                                <a style={{cursor: "pointer"}} onClick={window.accountId === "" ? login : ()=>props.changeCandidates(el)} className="ct">
                                 <span>Go to Poll</span>
                                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                                 <path d="M1,5 L11,5"></path>

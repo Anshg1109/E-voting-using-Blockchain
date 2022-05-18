@@ -88,7 +88,7 @@ const NewPoll = (props) => {
       >
         Submit
       </Button> */}
-      <a onClick={sendToBlockChain} className="ct" style={{padding: "19px 18px",top:"10px"}}>
+      <a onClick={sendToBlockChain} className="ct" style={{padding: "19px 18px",top:"10px", cursor: "pointer"}}>
       <span>Submit</span>
       <svg width="13px" height="10px" viewBox="0 0 13 10">
       <path d="M1,5 L11,5"></path>
